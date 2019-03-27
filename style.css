@@ -1,0 +1,59 @@
+.musictitle {
+	color: #99ccff;
+	text-align: center;
+	font-family: "Trebuchet MS", Verdana, Geneva, Arial;
+	font
+}
+
+.slider {
+		width: 560px;
+		height: 315px;
+		overflow: hidden;
+		margin: 80px auto;
+		border: 7px #4da6ff solid;
+		box-shadow: 4px 4px 15px black;
+	}
+	.slides {
+		width: calc(560px * 3);
+		animation: glisse 15s infinite;
+	}
+	.slide {
+		float: left;
+	}
+		
+@keyframes glisse {
+		0% {
+			transform: translateX(0);
+		}
+		10% {
+			transform: translateX(0);
+		}
+		33% {
+			transform: translateX(-560px);
+		}
+		43% {
+			transform: translateX(-560px);
+		}
+		66% {
+			transform: translateX(-1120px);
+		}
+		76% {
+			transform: translateX(-1120px);
+		}
+		100% {
+			transform: translateX(0);
+		}
+	}
+
+.Youtube {
+	width: calc(560px * 3);
+	height: 315px;
+	margin: 70px auto;
+
+	}
+body {
+	background-image:url("anime.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+    background-position: middle;
+}
