@@ -21,7 +21,7 @@
 	</div>
 	<div id="loader"></div>
 	<center>
-	<div class="Youtube">
+	<div style="display:none;" id="myDiv" class="animate-bottom">
 	
 	<iframe width="500" height="300" src="https://www.youtube.com/embed/WgNHZxJOKIY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	<iframe width="500" height="300" src="https://www.youtube.com/embed/n6sdmRxFsuU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -69,7 +69,20 @@
 	<iframe width="500" height="300" src="https://www.youtube.com/embed/ugtNZP-qByQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	<iframe width="500" height="300" src="https://www.youtube.com/embed/tvUMCOWrTgA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	<iframe width="500" height="300" src="https://www.youtube.com/embed/pxAiwZlzSD8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>	
+	
+		
+	<script>
+var myVar;
 
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>	
 	</div>
 	</center>
 </body>
